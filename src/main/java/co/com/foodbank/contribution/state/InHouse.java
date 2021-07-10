@@ -3,8 +3,6 @@ package co.com.foodbank.contribution.state;
 import java.io.Serializable;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
-import co.com.foodbank.contribution.dto.ContributionData;
-import co.com.foodbank.contribution.dto.IStateContribution;
 
 @JsonAutoDetect(fieldVisibility = Visibility.DEFAULT)
 public class InHouse implements IStateContribution, Serializable {
@@ -30,7 +28,7 @@ public class InHouse implements IStateContribution, Serializable {
 
     @Override
     public void inHouse(ContributionData contribution) {
-        this.context = "In House";
+        this.context = "InHouse";
         contribution.setState(this);
     }
 

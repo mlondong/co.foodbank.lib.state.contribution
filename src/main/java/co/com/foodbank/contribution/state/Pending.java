@@ -3,8 +3,6 @@ package co.com.foodbank.contribution.state;
 import java.io.Serializable;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
-import co.com.foodbank.contribution.dto.ContributionData;
-import co.com.foodbank.contribution.dto.IStateContribution;
 
 /**
  * @author mauricio.londono@gmail.com co.com.foodbank.contribution.dto
