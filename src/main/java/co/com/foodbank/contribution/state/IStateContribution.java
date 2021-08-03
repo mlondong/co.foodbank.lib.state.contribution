@@ -13,8 +13,8 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY,
         property = "type")
-@JsonSubTypes({@Type(value = Pending.class, name = "Delivered"),
-        @Type(value = Delyvered.class, name = "truck"),
+@JsonSubTypes({@Type(value = Pending.class, name = "Pending"),
+        @Type(value = Delyvered.class, name = "Delyvered"),
         @Type(value = InHouse.class, name = "InHouse"),
         @Type(value = PickedUp.class, name = "PickedUp"),
         @Type(value = Shipment.class, name = "Shipment")})
